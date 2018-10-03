@@ -1,6 +1,9 @@
-# Conversation Sample Application With Dashbot
+# Watson Assistant Sample Application With Dashbot
 
-This Node.js app demonstrates the Conversation service in a simple chat interface simulating ordering a simple pizza with Dashbot Analytics.
+This tutorial takes you through desining, building and deploying a Watson Assistant chatbot on a nodejs application. This is part of the IBM/Dashbot meetup held at Galvanize.
+
+## Presentation
+[Introduction to chatbot using Watson Assistant and Dashbot Analytics PDF](assets/ibm-dashbot-galvanize-100318.pdf)
 
 ## Before you begin
 
@@ -8,8 +11,6 @@ This Node.js app demonstrates the Conversation service in a simple chat interfac
     * [Sign up](https://www.ibm.com/cloud/) or use an existing account. Your account must have available space for at least 1 app and 1 service.
 * Make sure that you have the following prerequisites installed:
     * The [Node.js](https://nodejs.org/#download) runtime, including the [npm][npm_link] package manager
-
-
 
 ## Step 1- Provision IBM Watson Assistant Service
 1. Log into IBM Cloud and provision a Watson Assistant Service
@@ -23,7 +24,6 @@ This Node.js app demonstrates the Conversation service in a simple chat interfac
 3. Click on Launch Tool to go to Watson assistant home page
 
 ![alt text](/pics/step1-3-1.png)
-
 
 ## Step 2 - Designing Your Bot
 Building a chatbot with Watson Assistant is so easy, some developers choose to dive right into the tooling. However, with a well-thought out, well-planned chatbot, the interaction with the user can lead to a much better experience that can handle edge cases. In this section, we will design the interaction between a user, Dave, and a chatbot named HungerBot.
@@ -91,7 +91,7 @@ In the following steps, we have provided a sample restaurant chatbot that handle
     We could add time and number entities, however, there are some built-in system entities provided by IBM, like numbers, dates, and times, that the HungerBot will use. If you have another entity, define the additional entity in a new table.
 
 In the Dialog editor of Watson Assistant, we can now setup logic to step the user through the conversation. In the next section, we will use this design to train the Watson Assistant service.
-    
+
 ## Step 3 Build your bot
 
 1.	Once on the home page, click on workspaces tab
@@ -137,7 +137,6 @@ In the Dialog editor of Watson Assistant, we can now setup logic to step the use
 
 9.	Let’s add a node in our dialog to handle this user intent. Click on the back button next to the intent name to go back to the main page.
 
-![alt text](/pics/step3-9-1.png)
 
 10.	Click on Dialog tab. Once there, click on the three dots next to “Welcome” dialog and then pick “Add node below”.
 
@@ -269,7 +268,7 @@ Let’s create a front end of this app.
 
 1. First 
 Git clone this repository: https://github.com/lidderupk/chatbot-dashbot-workshop
-2.	Cd into the directory and npm install
+2.	`cd` into the directory and execute `npm install`
 3.	Make a copy of the .env.local file and call it .env. 
 4.	Give your bot a unique id NAME_CONFERENCE_CHAT
 5.	Get the DASHBOT_API_KEY from dashbot 
@@ -282,3 +281,14 @@ Git clone this repository: https://github.com/lidderupk/chatbot-dashbot-workshop
 ![alt text](/pics/step4-7-1.png)
 
 ![alt text](/pics/step4-7-2.png)
+
+8. Run `npm start`
+9. Point your browser to http://localhost:3000 to try out the app.
+
+## Additional Links
+1. [Watson Assistant Service Home](https://www.ibm.com/watson/ai-assistant/)
+2. [Tutorials and Documentation](https://console.bluemix.net/docs/services/conversation/getting-started.html#gettingstarted)
+3. [API for different SDKs](https://www.ibm.com/watson/developercloud/assistant/api/v1/node.html?node)
+4. [API Explorer ](https://watson-api-explorer.ng.bluemix.net/apis/assistant-v1)
+5. [IBM Functions](https://www.ibm.com/cloud/functions)
+6. [IBM Cloud Dashboard](https://console.bluemix.net/dashboard/apps/)
