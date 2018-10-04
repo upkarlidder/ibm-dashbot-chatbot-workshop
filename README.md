@@ -92,6 +92,8 @@ In the following steps, we have provided a sample restaurant chatbot that handle
 
 In the Dialog editor of Watson Assistant, we can now setup logic to step the user through the conversation. In the next section, we will use this design to train the Watson Assistant service.
 
+[Here is an attempt to design the bot as an exercise in mind mapping](assets/conference-bot-mindmap.pdf)
+
 ## Step 3 Build your bot
 
 1.	Once on the home page, click on workspaces tab
